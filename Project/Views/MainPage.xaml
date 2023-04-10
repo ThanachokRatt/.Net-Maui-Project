@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.MainPage">
+
+    <VerticalStackLayout
+            Spacing="20"
+            Padding="20,0"
+            VerticalOptions="Start">
+       
+            
+    <StackLayout Spacing="70" >
+       
+                <StackLayout>
+        <Label Text="Enter Bill"
+               TextColor="#AAAAAA"
+               FontSize="30"
+               FontAttributes="Bold"
+               Margin="0,10,0,10"/>
+
+        <Entry Placeholder="e.g.300.50"
+               PlaceholderColor="#AAAAAA"
+               FontSize="40"
+              
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Transparent"
+               TextChanged="Entry_TextChanged"
+             
+               x:Name="billEntry"
+               />
+                    </StackLayout>
+
+    <Frame HeightRequest="700"
+           WidthRequest="430"
+           
+           BackgroundColor="#D7F9EB">
+      
+
+    <StackLayout Spacing="20" 
+            
+             Margin="5,5,5,0">
+
+
+    <Label Text="Select tip"
+           FontSize="30"
+           TextColor="#AAAAAA"/>
+
+    <StackLayout Orientation="Horizontal"
+                 Spacing="20">
+        <Button x:Name="btn0Percent"
+                Text="0%"
+                TextColor="#4FAD71"
+                FontAttributes="Bold"
+                FontSize="28"
+                BackgroundColor="#D7F9EB"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Clicked="Button_Clicked"/>
+
+        <Button x:Name="btn10Percent"
+                Text="10%"
+                FontSize="28"
+                TextColor="#4FAD71"
+                BackgroundColor="#D7F9EB"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Clicked="Button_Clicked"/>
+
+        <Button x:Name="btn20Percent"
+                Text="20%"
+                FontSize="28"
+                TextColor="#4FAD71"
+                BackgroundColor="#D7F9EB"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Clicked="Button_Clicked"/>
+        
+    </StackLayout>
+        <StackLayout Spacing="30">
+        <Label Text="Choose Split" FontSize="30" TextColor="#AAAAAA"/>
+    <StackLayout Orientation="Horizontal"
+                 Spacing="60"
+                 HorizontalOptions="CenterAndExpand">
+
+    <Label x:Name="QuantityLabel"
+           Text="0"
+           FontSize="28"
+           TextColor="#4FAD71"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           />
+
+    <Stepper
+        Minimum="1"
+        Value="1"
+       
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        ValueChanged="Stepper_ValueChanged"
+             />
+
+
+
+</StackLayout>
+           
+    </StackLayout >
+        <StackLayout HeightRequest="150">
+            <Button Text="My Note"
+
+                     TextColor="#4FAD71"
+                     FontSize="25"
+                    
+                     VerticalOptions="EndAndExpand"
+                     BackgroundColor="#FFFFFF"
+                     WidthRequest="200"
+                    Clicked="Button_Clicked_2"/>
+
+        </StackLayout>
+         <StackLayout >
+            
+                <Button Text="Calculate"
+                        Clicked="Button_Clicked_1"
+                        FontSize="25"
+                        VerticalOptions="EndAndExpand"
+                        BackgroundColor="#4FAD71"
+                        WidthRequest="200"/>
+
+            </StackLayout>
+</StackLayout>
+             
+            </Frame>
+     </StackLayout>
+               
+        </VerticalStackLayout>
+
+</ContentPage>
+

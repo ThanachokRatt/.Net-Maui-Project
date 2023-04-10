@@ -1,0 +1,57 @@
+﻿<Properties StartupConfiguration="{BD4F2C0F-B6B2-46E8-BEC2-1CA4C0086942}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Project PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9F51C3DC-C75D-4EA5-BC0C-9395C2FF1029" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project/Views/FourthPage.xaml.cs">
+    <Files>
+      <File FileName="Project/ViewModel/ItemVM.cs" Line="29" Column="24" />
+      <File FileName="Project/Views/FourthPage.xaml" Line="48" Column="19" />
+      <File FileName="Project/Views/FourthPage.xaml.cs" Line="10" Column="5" />
+      <File FileName="Project/Views/MainPage.xaml.cs" Line="128" Column="9" />
+      <File FileName="Project/Views/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Project/Views/SecondPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Project/Views/SecondPage.xaml" Line="1" Column="1" />
+      <File FileName="Project/Views/ThridPage.xaml" Line="1" Column="1" />
+      <File FileName="Project/Views/ThridPage.xaml.cs" Line="40" Column="37" />
+      <File FileName="Project/Platforms/iOS/Program.cs" Line="13" Column="1" />
+      <File FileName="Project/App.xaml.cs" />
+      <File FileName="Project/App.xaml" />
+      <File FileName="Project/Model/Item.cs" Line="14" Column="70" />
+      <File FileName="Project/MauiProgram.cs" />
+      <File FileName="Project/Model/Bills.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project" expanded="True">
+            <Node name="Project" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="FourthPage.xaml" expanded="True">
+                  <Node name="FourthPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="MainPage.xaml" expanded="True" />
+                <Node name="SecondPage.xaml" expanded="True" />
+                <Node name="ThridPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9F51C3DC-C75D-4EA5-BC0C-9395C2FF1029" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

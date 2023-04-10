@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project</name>
+    </assembly>
+    <members>
+        <member name="P:Project.ViewModel.ItemVM.Items">
+            <inheritdoc cref="F:Project.ViewModel.ItemVM.items"/>
+        </member>
+    </members>
+</doc>

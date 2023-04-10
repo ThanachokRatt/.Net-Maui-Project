@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.FourthPage"
+             Title="FourthPage">
+  
+<VerticalStackLayout HeightRequest="800" 
+                     Spacing="20"
+                     >
+    
+            <Label Margin="10,0,0,0"
+                   Text="My Note"
+                   FontAttributes="Bold"
+                   FontSize="40"
+                   TextColor="#CACACA"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="Start" />
+
+            <Frame HeightRequest="790"
+                   WidthRequest="430"
+                   BackgroundColor="#D7F9EB">
+                <StackLayout Spacing="5"
+                             Margin="10,0,0,10">
+
+                    <Label Text="{Binding Date}"
+                          
+                           TextColor="#4F4F4F"
+                           FontSize="18"
+                           x:Name="dateOfBill" />
+
+
+                    
+                    <Editor TextColor="#4F4F4F"
+                            Text="{Binding editorText}"
+                            BackgroundColor="#F5F5F5"
+                            FontSize="18"
+                            HeightRequest="200"
+                            />
+
+
+                    <StackLayout HorizontalOptions="Start"
+                                 Orientation="Horizontal"
+                                 Spacing="10"
+                                 Margin="5,5,0,0">
+                        <Button Text="Pick Images"
+                                Clicked="Images_Clicked"
+                                FontSize="14"
+                               Margin="0,20,0,0"
+                                TextColor="#FFFFFF"
+                                BackgroundColor="#4FAD71"
+                                WidthRequest="120" />
+                         <Button Text="Delete Images"
+                                Clicked="Delete_Images"
+                                FontSize="14"
+                               Margin="10,20,0,0"
+                                TextColor="#FFFFFF"
+                                BackgroundColor="#4FAD71"
+                                WidthRequest="130"/>
+                        
+
+                    </StackLayout >
+                    <CollectionView x:Name="cvImages" HeightRequest="120">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding .}" HeightRequest="100" WidthRequest="140" HorizontalOptions="Start" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                    <StackLayout Orientation="Horizontal">
+                  <Button Text="Take Photo"
+                          HorizontalOptions="Start"
+                                Clicked="TakePhoto_Clicked"
+                                FontSize="14"
+                                 Margin="10,5,0,0"
+                                TextColor="#FFFFFF"
+                                BackgroundColor="#4FAD71"
+                                WidthRequest="120" />
+                  <Button Text="Delete Images"
+                                Clicked="Detete_takePhoto"
+                                FontSize="14"
+                               Margin="10,5,0,0"
+                                TextColor="#FFFFFF"
+                                BackgroundColor="#4FAD71"
+                                WidthRequest="130"/>
+                        </StackLayout>
+
+                            <Image  x:Name="resultTakePhotoImage" HeightRequest="100" WidthRequest="100" HorizontalOptions="Start" Margin="20,10,0,15"/>
+                       
+     <StackLayout Orientation="Horizontal"
+                                 Margin="0,0,0,20"
+                                 
+                                 Spacing="20"
+                                 HorizontalOptions="Center">
+                        <Button Text="Delete"
+                                TextColor="#4FAD71"
+                                FontSize="25"
+                                BackgroundColor="#FFFFFF"
+                                CornerRadius="5"
+                                Clicked="Delete_Clicked"
+                                WidthRequest="150" />
+                        <Button Text="Save"
+                                Clicked="Save_Clicked"
+                                FontSize="25"
+                                TextColor="#FFFFFF"
+                                BackgroundColor="#4FAD71"
+                                CornerRadius="5"
+                                WidthRequest="150"
+                                Margin="10,0,0,0" />
+
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>        
+    </VerticalStackLayout>
+</ContentPage>

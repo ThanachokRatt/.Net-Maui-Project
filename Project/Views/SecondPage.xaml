@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.SecondPage"
+            
+             Title="SecondPage">
+    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Items}"
+         >
+        <BindableLayout.ItemTemplate>
+ <DataTemplate>
+    <StackLayout>
+        <Frame
+            HeightRequest="300"
+            WidthRequest="430"
+            BackgroundColor="#D7F9EB">
+            <StackLayout
+                HeightRequest="150"
+                Spacing="30">
+                <Label 
+                    Text="Total Per Person"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="30"
+                    TextColor="#AAAAAA"/>
+
+                <Label Text="{Binding TotalGb, StringFormat='{0:F2}'}"
+                    x:Name="showTotal"
+                    FontAttributes="Bold"
+                    TextColor="#4FAD71"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="55"/>
+            </StackLayout>
+        </Frame>
+        <StackLayout 
+            VerticalOptions="Center"
+            Margin="0,20,0,0">
+            <Label
+                x:Name="showInfo"
+                Text="{Binding Text}"
+                FontSize="25"
+                TextColor="#AAAAAA"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout HeightRequest="300">
+            <Button 
+                Text="Save To Note"
+                TextColor="#4FAD71"
+                FontSize="25"
+                VerticalOptions="EndAndExpand"
+                BackgroundColor="#D7F9EB"
+                WidthRequest="200"
+                Clicked="Button_Clicked_1"/>
+        </StackLayout>
+        <StackLayout HeightRequest="80" >
+            <Button 
+                Text="ReCalculate"
+                Clicked="Button_Clicked"
+                FontSize="25"
+                VerticalOptions="EndAndExpand"
+                BackgroundColor="#4FAD71"
+                WidthRequest="200"/>
+        </StackLayout>
+    </StackLayout>
+</DataTemplate>
+
+            </BindableLayout.ItemTemplate>
+    </VerticalStackLayout>
+</ContentPage>
